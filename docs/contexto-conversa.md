@@ -85,6 +85,12 @@ App.vue
 - "Início" é mostrado como um **ícone de casinha** preenchido em azul, desenhado em SVG no próprio `Breadcrumb.vue`. Para usar o ícone num item, basta acrescentar `icone: 'casa'`. O texto "Início" continua escondido na tela para leitores de tela e aparece como dica ao passar o mouse.
 - Os botões "Baixar PDF" e "Imprimir" do topo foram comentados, porque a barra do leitor já tem as mesmas ações.
 
+### Ícone da aba do navegador (favicon)
+
+- Gerado a partir do brasão da `logo_granito.png`, recortado da parte esquerda da logo. A logo inteira é muito larga e ficaria ilegível em 16–32 px.
+- Arquivos em `public/`: `favicon-32.png` (aba), `favicon-192.png` (Android e telas de alta resolução) e `favicon-180.png` (atalho na tela inicial do iPhone). Eles são ligados no `index.html`.
+- O `favicon.ico` antigo, que era o logo padrão do Vue, foi apagado.
+
 ### Barra superior do cabeçalho (decorativa)
 
 - Adicionada ao `Header.vue` a faixa fina acima da logomarca, igual à do portal oficial. À esquerda ficam os atalhos (Ir para o conteúdo, o menu e o rodapé). À direita: FAQ, Mapa do Site, Acessibilidade | A- A A+ | Alto Contraste, Webmail e o cadeado.
